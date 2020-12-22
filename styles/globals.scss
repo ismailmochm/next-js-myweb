@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+// @media only screen and (max-width: 600px) {
+//   body {
+//     background-color: lightblue;
+//   }
+// }
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 18px;
+}
+
+a[href]{
+  color: #000;
+}
+
+.container{
+  width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navBar{
+  margin-top: 50px;
+
+  .container{
+    display: flex;
+    align-items: center;
+  }
+
+  .myName{
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .nav-menu{
+    margin-left: auto;
+    display: flex;
+    list-style: none;
+
+    .nav-item{
+      position: relative;
+      display: inline-block;
+      margin-left: 20px;
+      margin-right: 20px;
+      text-decoration: none;
+      transition: transform .3s;
+      &.active{
+        font-weight: 650;
+        &:after{
+          content: '';
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          width: 25px;
+          height: 2px;
+          background-color: #000;
+        }
+      }
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+
+.body-hero{
+
+  padding-top: 50px ;
+  padding-bottom: 50px  ;
+  &.Home{
+    padding-top: 0;
+    padding-bottom: 0 ;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+  }
+
+  .body-text{
+    width: 50%;
+    &.w-full{
+      width: 100%;
+    }
+
+    .body-title{
+      font-size: 40px;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .body-deskripsi{
+      font-size: 20px;
+      line-height: 40px;
+    }
+
+    .body-contact{
+      display: inline-block;
+      padding: 13px 35px;
+      background-color: #000;
+      margin-top: 20px;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      text-transform: uppercase;
+      transition: transform .3s;
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+
+  }
+  .image{
+    width: 50%;
+    text-align: right;
+  }
+}
+
+.port-wraper{
+  display: flex;
+  margin-right: -10px;
+  margin-left: -10px;
+
+  .body-port{
+    width: 50%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .port-img{
+    max-width: 100%;
+  }
+}
